@@ -33,9 +33,6 @@ module.exports = {
           400: "#778295",
         },
 
-        fontFamily: {
-          Poppins: ["Poppins", "sans-serif"],
-        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -70,6 +67,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -88,6 +88,10 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+
+      boxShadow: {
+        iconShadow: "0px 5px 20px 0px #0000001A",
       },
     },
   },
