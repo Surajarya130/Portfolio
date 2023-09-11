@@ -31,7 +31,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="mx-auto my-3 flex h-12 w-full max-w-screen-xl justify-between lg:border ">
+    <nav className="mx-auto my-3 flex h-12 w-full max-w-screen-xl justify-between  ">
       <Image src={logo} alt="Logo" />
       <ul className="flex items-center">
         {navLinks.map((item) => (
@@ -42,7 +42,7 @@ const Navbar = () => {
             {item.icon && <Image className="mr-2" src={item.icon} alt={item.title} />} {item.title}
           </li>
         ))}
-        <div className="bg-accent-primaryDark ml-2 mr-4 h-6 w-0.5"></div>
+        <div className="bg-accentDef-primaryLight ml-2 mr-4 h-6 w-0.5"></div>
         <Image src={lightMode} alt="Light-Mode" />
       </ul>
 

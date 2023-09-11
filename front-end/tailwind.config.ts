@@ -32,6 +32,7 @@ module.exports = {
           300: "#192333",
           400: "#778295",
         },
+
         fontFamily: {
           Poppins: ["Poppins", "sans-serif"],
         },

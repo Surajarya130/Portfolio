@@ -66,7 +66,7 @@
     @apply text-lg font-normal;
   }
   .body-bold {
-    @apply text-lg font-semibold;
+    @apply text-lg font-semibold !important;
   }
   .small-regular {
     @apply text-sm font-normal;

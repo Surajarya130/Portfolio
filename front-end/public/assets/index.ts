@@ -1,4 +1,6 @@
 import downloadIcon from "./downloadIcon.svg";
 import lightMode from "./lightMode.svg";
 import logo from "./logo.svg";
-export { downloadIcon, lightMode, logo };
+import sideHero from "./sideHero.png";
+import copyIcon from "./copyIcon.svg";
+export { downloadIcon, lightMode, logo, sideHero, copyIcon };
