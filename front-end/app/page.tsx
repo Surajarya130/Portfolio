@@ -1,4 +1,4 @@
-import { Navbar, HeroSeciton, MySkills, MyServices } from "@/components/index";
+import { Navbar, HeroSeciton, MySkills, MyServices, Projects } from "@/components/index";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <HeroSeciton />
       <MySkills />
       <MyServices />
+      <Projects />
     </main>
   );
 }

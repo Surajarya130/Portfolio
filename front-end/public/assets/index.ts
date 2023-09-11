@@ -8,6 +8,12 @@ import serviceIcon from "./serviceIcon.svg";
 import backendIcon from "./backend-icon.svg";
 import webOpt from "./webOptIcon.svg";
 import arrIcon from "./arrIcon.svg";
+import Morent from "./Morrent.png";
+import JobIt from "./JobIt.png";
+import Hipnode from "./Hipnode.png";
+import arrRight from "./arrRight.svg";
+import arrRSm from "./arrRSm.svg";
+
 export {
   downloadIcon,
   lightMode,
@@ -19,4 +25,9 @@ export {
   backendIcon,
   webOpt,
   arrIcon,
+  Morent,
+  JobIt,
+  Hipnode,
+  arrRight,
+  arrRSm,
 };

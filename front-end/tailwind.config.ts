@@ -33,6 +33,7 @@ module.exports = {
           400: "#778295",
         },
 
+        tagBtnColor: "#6b9de2",
         cardBg: "#f3f8ff",
 
         border: "hsl(var(--border))",
