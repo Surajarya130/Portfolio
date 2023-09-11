@@ -5,6 +5,7 @@ import {
   MyServices,
   Projects,
   GetInTouch,
+  WorkExperience,
 } from "@/components/index";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSeciton />
       <MySkills />
       <MyServices />
+      <WorkExperience />
       <Projects />
       <GetInTouch />
     </main>

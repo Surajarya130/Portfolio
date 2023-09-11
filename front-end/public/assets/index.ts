@@ -14,7 +14,12 @@ import Hipnode from "./Hipnode.png";
 import arrRight from "./arrRight.svg";
 import arrRSm from "./arrRSm.svg";
 import CTA from "./CTA.png";
-
+import roundedCircle from "./roundedCircle.svg";
+import lineDeco from "./lineDeco.svg";
+import slack from "./slack.svg";
+import mozila from "./mozila.svg";
+import mailchimp from "./mailchimp.svg";
+import digiOcean from "./digiOcean.svg";
 export {
   downloadIcon,
   lightMode,
@@ -32,6 +37,10 @@ export {
   arrRight,
   arrRSm,
   CTA,
+  roundedCircle,
+  lineDeco,
+  slack,
+  digiOcean,
+  mozila,
+  mailchimp,
 };
-
-console.log(CTA.src);

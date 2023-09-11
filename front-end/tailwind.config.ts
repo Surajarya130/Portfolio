@@ -94,8 +94,9 @@ module.exports = {
       },
 
       boxShadow: {
-        iconShadow: "0px 5px 20px 0px #0000001A",
-        cardShadow: "0px 1px 20px 0px #E0ECFF",
+        iconShadow: "0px 5px 20px 0px #0000001A !important",
+        cardShadow: "0px 1px 20px 0px #E0ECFF !important",
+        workExpCardShadow: "-25px 47px 66px 0px #00000014 !important",
       },
     },
   },

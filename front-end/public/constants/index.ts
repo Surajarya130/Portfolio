@@ -1,4 +1,13 @@
-import { arrIcon, backendIcon, serviceIcon, webOpt } from "@/public/assets";
+import {
+  arrIcon,
+  backendIcon,
+  digiOcean,
+  mailchimp,
+  mozila,
+  serviceIcon,
+  slack,
+  webOpt,
+} from "@/public/assets";
 
 const cardData = [
   {
@@ -25,4 +34,28 @@ const cardData = [
   },
 ];
 
-export { cardData };
+const workExpData = [
+  {
+    logo: slack,
+    title: "Slack",
+    desc: "Product Design - 4 Years Experince",
+  },
+
+  {
+    logo: mozila,
+    title: "Mozila",
+    desc: "Sr. UI Design - 4 Years Experince",
+  },
+  {
+    logo: digiOcean,
+    title: "Digital Ocean",
+    desc: "UI & Motion Designer - 4 Years Experince",
+  },
+  {
+    logo: mailchimp,
+    title: "Digital Ocean",
+    desc: "UI & Motion Designer - 4 Years Experince",
+  },
+];
+
+export { cardData, workExpData };
