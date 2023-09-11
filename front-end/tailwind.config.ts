@@ -33,6 +33,8 @@ module.exports = {
           400: "#778295",
         },
 
+        cardBg: "#f3f8ff",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -92,6 +94,7 @@ module.exports = {
 
       boxShadow: {
         iconShadow: "0px 5px 20px 0px #0000001A",
+        cardShadow: "0px 1px 20px 0px #E0ECFF",
       },
     },
   },
