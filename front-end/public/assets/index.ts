@@ -13,6 +13,7 @@ import JobIt from "./JobIt.png";
 import Hipnode from "./Hipnode.png";
 import arrRight from "./arrRight.svg";
 import arrRSm from "./arrRSm.svg";
+import CTA from "./CTA.png";
 
 export {
   downloadIcon,
@@ -30,4 +31,7 @@ export {
   Hipnode,
   arrRight,
   arrRSm,
+  CTA,
 };
+
+console.log(CTA.src);
