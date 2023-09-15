@@ -20,6 +20,9 @@ import slack from "./slack.svg";
 import mozila from "./mozila.svg";
 import mailchimp from "./mailchimp.svg";
 import digiOcean from "./digiOcean.svg";
+import userImg from "./userImg.png";
+import Stars from "./Stars.svg";
+
 export {
   downloadIcon,
   lightMode,
@@ -43,4 +46,6 @@ export {
   digiOcean,
   mozila,
   mailchimp,
+  userImg,
+  Stars,
 };

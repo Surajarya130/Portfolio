@@ -1,12 +1,13 @@
+"useClient";
+
 import { lineDeco } from "@/public/assets";
 import Image from "next/image";
 import { WorkExpCard } from "../index";
-import { icons } from "lucide-react";
 import { workExpData } from "@/public/constants";
 
 const WorkExperience = () => {
   return (
-    <section className="bg-white-900 py-24 ">
+    <section className="bg-white-900 py-24 z-0">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex gap-6">
           <div className="w-1/2 bg-black-200 rounded-2xl p-[120px] ">
@@ -19,7 +20,7 @@ const WorkExperience = () => {
               <Image src={lineDeco} alt="line-decoration" />
             </div>
           </div>
-          <div className="w-1/2 flex flex-col justify-between">
+          <div className="w-1/2 flex flex-col justify-between ">
             <WorkExpCard workExpData={workExpData} />
           </div>
         </div>

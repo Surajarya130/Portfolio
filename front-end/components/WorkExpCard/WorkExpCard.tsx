@@ -18,7 +18,7 @@ const WorkExpCard: React.FC<WorkExpCardProps> = ({ workExpData }) => {
   return workExpData.map((expData, ind) => (
     <div
       key={ind}
-      className="flex border border-white rounded-xl p-9 transform hover:translate-x-6 hover:-translate-y-4 transition duration-500 ease-out hover:shadow-workExpCardShadow"
+      className="flex border border-white rounded-xl p-9 transform hover:translate-x-6 hover:-translate-y-4 transition duration-500 ease-out hover:shadow-workExpCardShadow z-[-10]"
     >
       <div id="logo">
         <Image src={expData.logo} alt="slack" />

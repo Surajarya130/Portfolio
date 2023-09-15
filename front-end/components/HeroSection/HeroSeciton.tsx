@@ -7,9 +7,9 @@ import { Button } from "../ui/button";
 
 const HeroSeciton = () => {
   return (
-    <section className="bg-white-800 py-24">
-      <div className="flex max-w-screen-xl mx-auto">
-        <div id="heroContent" className="w-1/2">
+    <section className="bg-white-800 py-24" id="heroContainer">
+      <div className="flex max-w-screen-xl mx-auto sm:flex-col-reverse">
+        <div className="w-1/2 sm:w-full">
           <p className="para-bold text-accentDef-primaryLight mb-7">Hi, I am Suraj</p>
           <h1 className="heading-1 text-black-200">
             Professional <span className="bg-accentDef-secondary h-6">Full Stack Developer</span>{" "}
@@ -32,7 +32,7 @@ const HeroSeciton = () => {
             </Button>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 sm:w-full">
           <Image src={sideHero} alt="side hero" className="w-full" />
         </div>
       </div>

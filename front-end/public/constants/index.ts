@@ -2,6 +2,7 @@ import {
   arrIcon,
   backendIcon,
   digiOcean,
+  downloadIcon,
   mailchimp,
   mozila,
   serviceIcon,
@@ -58,4 +59,30 @@ const workExpData = [
   },
 ];
 
-export { cardData, workExpData };
+interface navLinks {
+  id: string;
+  title: string;
+  icon?: string;
+}
+
+const navLinks: navLinks[] = [
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "case-studies",
+    title: "Case Studies",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+  {
+    id: "resume",
+    title: "Resume",
+    icon: downloadIcon,
+  },
+];
+
+export { cardData, workExpData, navLinks };

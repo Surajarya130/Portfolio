@@ -79,6 +79,15 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        openRight: {
+          "0%": { right: "-100%" },
+          "100%": { right: "0%" },
+        },
+        closeRight: {
+          "0%": { right: "0%" },
+          "100%": { right: "-100%" },
+        },
+
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -91,6 +100,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+
+        "open-right": "openRight 0.5s ease-in-out",
+        "close-right": "closeRight 1s ease-in-out",
       },
 
       boxShadow: {
