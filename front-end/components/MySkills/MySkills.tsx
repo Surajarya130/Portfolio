@@ -71,16 +71,16 @@ const MySkills = () => {
     },
   ];
   return (
-    <section className="bg-white-900 py-24">
-      <div className="max-w-screen-xl mx-auto">
-        <h1 className="heading-2 text-black-200 text-center mb-12">
-          <span className="bg-accentDef-secondary">My Skills</span>
+    <section className="bg-white-900 dark:bg-black-200 py-6 md:py-12 lg:py-24">
+      <div className="max-container px-[2.5%]">
+        <h1 className="heading-2 text-black-200  text-center mb-12">
+          <span className="strip-bgW dark:text-white-900">My Skills</span>
         </h1>
 
         <div id="skills" className="flex flex-wrap justify-center">
           {icons.map((icon, ind) => (
             <div
-              className="mx-5 my-5  w-[75px] h-[75px] bg-white-800 rounded-full flex align-middle justify-center hover:bg-white-900 hover:shadow-md hover:scale-110 hover:translate-y-1"
+              className="m-1 sm:m-5  w-[75px] h-[75px] bg-white-800 dark:bg-[#192332] rounded-full flex align-middle justify-center hover:bg-white-900 hover:shadow-md hover:scale-110 hover:translate-y-1"
               key={ind}
             >
               <Image src={icon.icon} alt={`${icon.icon}-${ind}`} />

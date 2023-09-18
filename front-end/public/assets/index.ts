@@ -22,6 +22,12 @@ import mailchimp from "./mailchimp.svg";
 import digiOcean from "./digiOcean.svg";
 import userImg from "./userImg.png";
 import Stars from "./Stars.svg";
+import insta from "./insta.svg";
+import linkedin from "./linkedin.svg";
+import twitter from "./twitter.svg";
+import github from "./github.svg";
+import gitIcon from "./gitIc.svg";
+import night from "./night.svg";
 
 export {
   downloadIcon,
@@ -48,4 +54,10 @@ export {
   mailchimp,
   userImg,
   Stars,
+  insta,
+  linkedin,
+  twitter,
+  github,
+  gitIcon,
+  night,
 };

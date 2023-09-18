@@ -1,5 +1,4 @@
 import {
-  // Navbar ,
   HeroSeciton,
   MySkills,
   MyServices,
@@ -19,7 +18,6 @@ export default function Home() {
       <WorkExperience />
       <Projects />
       {/* <TestimonialSwiper /> */}
-      <GetInTouch />
     </main>
   );
 }

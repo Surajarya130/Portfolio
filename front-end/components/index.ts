@@ -5,8 +5,8 @@ import MyServices from "./MyServices/MyServices";
 import Projects from "./Projects/Projects";
 import GetInTouch from "./GetInTouch/GetInTouch";
 import WorkExperience from "./WorkExperience/WorkExperience";
-import WorkExpCard from "./WorkExpCard/WorkExpCard";
 import TestimonialSwiper from "./TestimonialSwiper/TestimonialSwiper";
+import SocialConnection from "./SocialConnection/SocialConnection";
 
 export {
   Navbar,
@@ -16,6 +16,6 @@ export {
   Projects,
   GetInTouch,
   WorkExperience,
-  WorkExpCard,
   TestimonialSwiper,
+  SocialConnection,
 };

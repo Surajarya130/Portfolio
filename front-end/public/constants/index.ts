@@ -1,4 +1,7 @@
 import {
+  Hipnode,
+  JobIt,
+  Morent,
   arrIcon,
   backendIcon,
   digiOcean,
@@ -59,6 +62,31 @@ const workExpData = [
   },
 ];
 
+const projects = [
+  {
+    title: "Morrent - A Car Rental Application",
+    frontEndTech: "React, RTK, TW",
+    backEndTech: "Node, MongoDB",
+    projectLink: "/",
+    imgSrc: Morent,
+  },
+  {
+    title: "JobIT - A Job Finding Application",
+    frontEndTech: "React, RTK, TW",
+    backEndTech: "Rapid API",
+    projectLink: "/",
+    imgSrc: JobIt,
+    rev: true,
+  },
+  {
+    title: "Hipnode - A Social Media Application",
+    frontEndTech: "React, RTK, TW",
+    backEndTech: "Node, Express",
+    projectLink: "/",
+    imgSrc: Hipnode,
+  },
+];
+
 interface navLinks {
   id: string;
   title: string;
@@ -67,7 +95,7 @@ interface navLinks {
 
 const navLinks: navLinks[] = [
   {
-    id: "home",
+    id: "/",
     title: "Home",
   },
   {
@@ -85,4 +113,4 @@ const navLinks: navLinks[] = [
   },
 ];
 
-export { cardData, workExpData, navLinks };
+export { cardData, workExpData, navLinks, projects };

@@ -7,32 +7,29 @@ import { Button } from "../ui/button";
 
 const HeroSeciton = () => {
   return (
-    <section className="bg-white-800 py-24" id="heroContainer">
-      <div className="flex max-w-screen-xl mx-auto sm:flex-col-reverse">
-        <div className="w-1/2 sm:w-full">
-          <p className="para-bold text-accentDef-primaryLight mb-7">Hi, I am Suraj</p>
-          <h1 className="heading-1 text-black-200">
-            Professional <span className="bg-accentDef-secondary h-6">Full Stack Developer</span>{" "}
-            based in India
+    <section className="bg-white-800 dark:bg-black-300 py-6 md:py-12 lg:py-4 " id="heroContainer">
+      <div className="max-container p-[2.5%] flex flex-col sm:flex-row items-center">
+        <div className="w-full sm:w-1/2">
+          <p className="para-bold text-accentDef-primaryLight mt-4 sm:mb-7 md:mt-7">
+            Hi, I am Suraj
+          </p>
+          <h1 className="text-[36px] sm:heading-1 font-bold">
+            Professional <span className="strip">Full Stack Developer</span> based in India
           </h1>
-          <p className="body-regular text-white-500 w-11/12">
+
+          <p className="body-regular text-white-500 dark:text-white-800 w-11/12">
             Transforming the web one line of code at a time: Crafting cutting-edge digital
             experiences with precision, passion, and a profound commitment to excellence
           </p>
           <div className="">
-            <Button
-              variant="outline"
-              className="body-bold bg-accentDef-primaryLight text-white-900 px-9 py-7 mt-9 rounded-[90px] hover:bg-accentDef-primaryDark  hover:text-white-800"
-            >
-              My Work
-            </Button>
-            <Button className="ml-5 body-bold text-white-500 bg-white-900 px-9 py-7 mt-9 rounded-[90px] hover:bg-black-200 hover:text-white-800">
+            <Button className="btn-primary w-full lg:w-fit mr-4">My Work</Button>
+            <Button className="body-bold w-full lg:w-fit text-white-500 bg-white-900 px-6 py-7 my-5 sm:mt-9 rounded-[90px] hover:bg-black-200 hover:text-white-800 my">
               mesurajarya@gmail.com
-              <Image className="m-4" src={copyIcon} alt="copyIcon" />
+              <Image className="ml-2" src={copyIcon} alt="copyIcon" />
             </Button>
           </div>
         </div>
-        <div className="w-1/2 sm:w-full">
+        <div className="w-full sm:w-1/2">
           <Image src={sideHero} alt="side hero" className="w-full" />
         </div>
       </div>

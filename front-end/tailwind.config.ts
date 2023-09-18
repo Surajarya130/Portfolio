@@ -13,9 +13,13 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        customMob: "640px",
       },
     },
     extend: {
+      // backgroundImage: {
+      //   "custom-gradient": "linear-gradient(to right, #f3f8ff 63%, #ffbe62 40%)",
+      // },
       colors: {
         accentDef: {
           primaryLight: "#0252CD",
@@ -35,6 +39,7 @@ module.exports = {
 
         tagBtnColor: "#6b9de2",
         cardBg: "#f3f8ff",
+        cardBgDark: "#1F2E48",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -108,6 +113,8 @@ module.exports = {
       boxShadow: {
         iconShadow: "0px 5px 20px 0px #0000001A !important",
         cardShadow: "0px 1px 20px 0px #E0ECFF !important",
+        cardShadowDark: "0px 1px 20px 0px #1F2E48 !important",
+
         workExpCardShadow: "-25px 47px 66px 0px #00000014 !important",
       },
     },
