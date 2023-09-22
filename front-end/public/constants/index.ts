@@ -8,6 +8,7 @@ import {
   downloadIcon,
   mailchimp,
   mozila,
+  nextIcon,
   serviceIcon,
   slack,
   webOpt,
@@ -62,6 +63,72 @@ const workExpData = [
   },
 ];
 
+const skillsIcons = [
+  {
+    name: "JS",
+    icon: nextIcon,
+  },
+  {
+    name: "JS2",
+    icon: nextIcon,
+  },
+  {
+    name: "JS3",
+    icon: nextIcon,
+  },
+  {
+    name: "JS4",
+    icon: nextIcon,
+  },
+  {
+    name: "JS5",
+    icon: nextIcon,
+  },
+  {
+    name: "JS6",
+    icon: nextIcon,
+  },
+  {
+    name: "JS7",
+    icon: nextIcon,
+  },
+  {
+    name: "JS8",
+    icon: nextIcon,
+  },
+  {
+    name: "JS9",
+    icon: nextIcon,
+  },
+  {
+    name: "JS10",
+    icon: nextIcon,
+  },
+  {
+    name: "JS11",
+    icon: nextIcon,
+  },
+  {
+    name: "JS12",
+    icon: nextIcon,
+  },
+  {
+    name: "JS13",
+    icon: nextIcon,
+  },
+  {
+    name: "JS14",
+    icon: nextIcon,
+  },
+  {
+    name: "JS15",
+    icon: nextIcon,
+  },
+  {
+    name: "JS16",
+    icon: nextIcon,
+  },
+];
 const projects = [
   {
     title: "Morrent - A Car Rental Application",
@@ -113,4 +180,4 @@ const navLinks: navLinks[] = [
   },
 ];
 
-export { cardData, workExpData, navLinks, projects };
+export { cardData, workExpData, navLinks, projects, skillsIcons };

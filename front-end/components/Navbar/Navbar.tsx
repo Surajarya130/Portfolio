@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 import Image from "next/image";
 
@@ -18,6 +19,13 @@ const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const imageSrc = theme === "dark" ? night : lightMode;
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   useEffect(() => {
     setMounted(true);
@@ -41,54 +49,59 @@ const Navbar = () => {
   }
 
   return (
-    <div
-      className={`w-full bg-white-800 dark:bg-black-300 sticky top-0 z-20 ${
-        !top && `bg-white shadow-xl pt-3`
-      } `}
-    >
-      <nav className="max-container px-[2.5%] flex items-center justify-between">
-        <div className="w-full flex items-center justify-between py-3">
-          <Image src={logo} alt="Logo" />
-          <div className="hidden md:block">
-            <ul className="flex justify-between">
-              {navLinks.map((item) => (
-                <li
-                  key={item.id}
-                  className="small-bold text-accentDef-primaryLight dark:text-white-800 mx-4 flex items-center"
-                >
-                  {item.icon && <Image className="mr-2" src={item.icon} alt={item.title} />}{" "}
-                  <Link href={item.id}>{item.title}</Link>
-                </li>
-              ))}
-              <div className="bg-accentDef-primaryLight dark:bg-white-900 ml-2 mr-4 h-6 w-0.5"></div>
-              <Image
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                // src={`${theme === "dark" ? night : lightMode}`}
-                src={imageSrc}
-                width={30}
-                height={30}
-                alt="Light-Mode"
-              />
-            </ul>
+    <>
+      <div
+        className={` bg-white-800 dark:bg-black-300 sticky top-0 z-50 ${
+          !top && "shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]"
+        }`}
+      >
+        <motion.div
+          className="fixed top-0 left-0 right-0 h-0.5 bg-accentDef-primaryLight dark:bg-white-900 origin-top-left"
+          style={{ scaleX }}
+        />
+        <nav className="max-container px-[2.5%] max-auto flex items-center justify-between h-20">
+          <div className="w-full flex items-center justify-between">
+            <Image src={logo} alt="Logo" />
+            <div className="hidden md:block">
+              <ul className="flex justify-between">
+                {navLinks.map((item) => (
+                  <li
+                    key={item.id}
+                    className="small-bold text-accentDef-primaryLight dark:text-white-800 mx-4 flex items-center"
+                  >
+                    {item.icon && <Image className="mr-2" src={item.icon} alt={item.title} />}{" "}
+                    <Link href={item.id}>{item.title}</Link>
+                  </li>
+                ))}
+                <div className="bg-accentDef-primaryLight dark:bg-white-900 ml-2 mr-4 h-6 w-0.5"></div>
+
+                <Image
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                  // src={`${theme === "dark" ? night : lightMode}`}
+                  src={imageSrc}
+                  width={30}
+                  height={30}
+                  alt="Light-Mode"
+                />
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div id="hamMenu" className="md:hidden flex">
-          <Image
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            // src={`${theme === "dark" ? night : lightMode}`}
-            src={imageSrc}
-            height={30}
-            width={30}
-            alt="Light-Mode"
-            className="mr-3"
-          />
-          <Hamburger duration={0.8} onToggle={handleToggle} />
-        </div>
+          <div id="hamMenu" className="md:hidden flex">
+            <Hamburger duration={0.8} onToggle={handleToggle} />
+            <Image
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              src={imageSrc}
+              height={30}
+              width={30}
+              alt="Light-Mode"
+            />
+          </div>
 
-        {show && <MobileNavbar isOpen={show} />}
-      </nav>
-    </div>
+          {show && <MobileNavbar isOpen={show} />}
+        </nav>
+      </div>
+    </>
   );
 };
 

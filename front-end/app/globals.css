@@ -119,6 +119,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -130,7 +131,7 @@
   }
 
   .btn-primary {
-    @apply body-bold bg-accentDef-primaryLight text-white-900 px-5 py-7 mt-9 rounded-[90px] hover:bg-accentDef-primaryDark  hover:text-white-800;
+    @apply body-bold bg-accentDef-primaryLight text-white-900 px-9 py-7 rounded-[90px] hover:bg-accentDef-primaryDark  hover:text-white-800;
   }
 }
 
@@ -154,7 +155,11 @@
   z-index: 1;
 }
 
-.hamburger-react div {
+/* .hamburger-react div {
   left: 0 !important;
   right: 8px !important;
+} */
+
+.svgFIll {
+  fill: "#DA4567";
 }

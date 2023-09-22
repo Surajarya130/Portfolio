@@ -12,7 +12,7 @@ const MobileNavbar: React.FC<MobNavbarProp> = ({ isOpen }) => {
   console.log(isOpen);
   return (
     <div
-      className={`h-[100vh] w-screen bg-white-800 dark:bg-black-300 right-0 z-[100] shadow-2xl top-20 fixed 
+      className={`h-[100vh] w-screen bg-white-800 dark:bg-black-300 right-0 z-[100] shadow-2xl top-16 fixed 
       ${isOpen ? "animate-open-right" : "animate-close-right"} `}
     >
       <div className="">

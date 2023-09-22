@@ -1,75 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import { nextIcon } from "@/public/assets";
+import { skillsIcons } from "@/public/constants";
 
 const MySkills = () => {
-  const icons = [
-    {
-      name: "JS",
-      icon: nextIcon,
-    },
-    {
-      name: "JS2",
-      icon: nextIcon,
-    },
-    {
-      name: "JS3",
-      icon: nextIcon,
-    },
-    {
-      name: "JS4",
-      icon: nextIcon,
-    },
-    {
-      name: "JS5",
-      icon: nextIcon,
-    },
-    {
-      name: "JS6",
-      icon: nextIcon,
-    },
-    {
-      name: "JS7",
-      icon: nextIcon,
-    },
-    {
-      name: "JS8",
-      icon: nextIcon,
-    },
-    {
-      name: "JS9",
-      icon: nextIcon,
-    },
-    {
-      name: "JS10",
-      icon: nextIcon,
-    },
-    {
-      name: "JS11",
-      icon: nextIcon,
-    },
-    {
-      name: "JS12",
-      icon: nextIcon,
-    },
-    {
-      name: "JS13",
-      icon: nextIcon,
-    },
-    {
-      name: "JS14",
-      icon: nextIcon,
-    },
-    {
-      name: "JS15",
-      icon: nextIcon,
-    },
-    {
-      name: "JS16",
-      icon: nextIcon,
-    },
-  ];
   return (
     <section className="bg-white-900 dark:bg-black-200 py-6 md:py-12 lg:py-24">
       <div className="max-container px-[2.5%]">
@@ -78,12 +12,16 @@ const MySkills = () => {
         </h1>
 
         <div id="skills" className="flex flex-wrap justify-center">
-          {icons.map((icon, ind) => (
+          {skillsIcons.map((icon, ind) => (
             <div
-              className="m-1 sm:m-5  w-[75px] h-[75px] bg-white-800 dark:bg-[#192332] rounded-full flex align-middle justify-center hover:bg-white-900 hover:shadow-md hover:scale-110 hover:translate-y-1"
+              className="transition-transform ease-in-out duration-300 delay-100 m-1 sm:m-5 w-[75px] h-[75px] bg-white-800 dark:bg-[#192332] rounded-full flex align-middle justify-center hover:bg-white-900 hover:shadow-md hover:scale-125 transform-gpu"
               key={ind}
             >
-              <Image src={icon.icon} alt={`${icon.icon}-${ind}`} />
+              <Image
+                className="fill-current text-gray-500 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-300"
+                src={icon.icon}
+                alt={`${icon.icon}-${ind}`}
+              />
             </div>
           ))}
         </div>

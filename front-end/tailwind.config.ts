@@ -17,9 +17,6 @@ module.exports = {
       },
     },
     extend: {
-      // backgroundImage: {
-      //   "custom-gradient": "linear-gradient(to right, #f3f8ff 63%, #ffbe62 40%)",
-      // },
       colors: {
         accentDef: {
           primaryLight: "#0252CD",

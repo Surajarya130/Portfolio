@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import { workExpData } from "@/public/constants";
 import WorkExpCard from "../WorkExpCard/WorkExpCard";
-import exp from "constants";
 
 const WorkExperience = () => {
   return (

@@ -1,13 +1,4 @@
-import {
-  HeroSeciton,
-  MySkills,
-  MyServices,
-  Projects,
-  GetInTouch,
-  WorkExperience,
-  // TestimonialSwiper,
-} from "@/components/index";
-import ContactPage from "./contact/page";
+import { HeroSeciton, MySkills, MyServices, Projects, WorkExperience } from "@/components/index";
 
 export default function Home() {
   return (
@@ -17,7 +8,6 @@ export default function Home() {
       <MyServices />
       <WorkExperience />
       <Projects />
-      {/* <TestimonialSwiper /> */}
     </main>
   );
 }

@@ -28,6 +28,7 @@ import twitter from "./twitter.svg";
 import github from "./github.svg";
 import gitIcon from "./gitIc.svg";
 import night from "./night.svg";
+import checkGreen from "./checkGreen.svg";
 
 export {
   downloadIcon,
@@ -60,4 +61,5 @@ export {
   github,
   gitIcon,
   night,
+  checkGreen,
 };
