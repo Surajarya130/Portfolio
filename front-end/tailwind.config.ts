@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      transitionDelay: ["hover", "focus"],
+      grayscale: ["hover", "focus"],
+
       colors: {
         accentDef: {
           primaryLight: "#0252CD",

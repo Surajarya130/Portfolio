@@ -52,7 +52,7 @@ const Navbar = () => {
     <>
       <div
         className={` bg-white-800 dark:bg-black-300 sticky top-0 z-50 ${
-          !top && "shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]"
+          !top && "shadow-[rgba(0,_0,_0,_0.2)_0px_10px_10px_-7px]"
         }`}
       >
         <motion.div
@@ -88,14 +88,15 @@ const Navbar = () => {
           </div>
 
           <div id="hamMenu" className="md:hidden flex">
-            <Hamburger duration={0.8} onToggle={handleToggle} />
             <Image
+              className="mr-4"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               src={imageSrc}
               height={30}
               width={30}
               alt="Light-Mode"
             />
+            <Hamburger duration={0.8} onToggle={handleToggle} />
           </div>
 
           {show && <MobileNavbar isOpen={show} />}

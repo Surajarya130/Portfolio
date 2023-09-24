@@ -155,11 +155,7 @@
   z-index: 1;
 }
 
-/* .hamburger-react div {
+.hamburger-react div {
   left: 0 !important;
   right: 8px !important;
-} */
-
-.svgFIll {
-  fill: "#DA4567";
 }

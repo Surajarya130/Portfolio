@@ -29,6 +29,9 @@ import github from "./github.svg";
 import gitIcon from "./gitIc.svg";
 import night from "./night.svg";
 import checkGreen from "./checkGreen.svg";
+import js from "./js.svg";
+import morentCase from "./morent-case.png";
+import jobitCase from "./jobit-case.png";
 
 export {
   downloadIcon,
@@ -62,4 +65,7 @@ export {
   gitIcon,
   night,
   checkGreen,
+  js,
+  morentCase,
+  jobitCase,
 };

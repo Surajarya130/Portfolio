@@ -8,10 +8,12 @@ import {
   downloadIcon,
   mailchimp,
   mozila,
-  nextIcon,
   serviceIcon,
   slack,
+  js,
+  morentCase,
   webOpt,
+  jobitCase,
 } from "@/public/assets";
 
 const cardData = [
@@ -66,67 +68,67 @@ const workExpData = [
 const skillsIcons = [
   {
     name: "JS",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS2",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS3",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS4",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS5",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS6",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS7",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS8",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS9",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS10",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS11",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS12",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS13",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS14",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS15",
-    icon: nextIcon,
+    icon: js,
   },
   {
     name: "JS16",
-    icon: nextIcon,
+    icon: js,
   },
 ];
 const projects = [
@@ -180,4 +182,17 @@ const navLinks: navLinks[] = [
   },
 ];
 
-export { cardData, workExpData, navLinks, projects, skillsIcons };
+const caseStudiesData = [
+  {
+    title: "Morrent",
+    desc: "Car Rental Applicaiton",
+    img: morentCase,
+  },
+  {
+    title: "JobIt",
+    desc: "Job Finding Applicaiton",
+    img: jobitCase,
+  },
+];
+
+export { cardData, workExpData, navLinks, projects, skillsIcons, caseStudiesData };

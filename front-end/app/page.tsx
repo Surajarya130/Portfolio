@@ -1,4 +1,11 @@
-import { HeroSeciton, MySkills, MyServices, Projects, WorkExperience } from "@/components/index";
+import {
+  HeroSeciton,
+  MySkills,
+  MyServices,
+  Projects,
+  WorkExperience,
+  TestimonialSwiper,
+} from "@/components/index";
 
 export default function Home() {
   return (
@@ -8,6 +15,7 @@ export default function Home() {
       <MyServices />
       <WorkExperience />
       <Projects />
+      <TestimonialSwiper />
     </main>
   );
 }

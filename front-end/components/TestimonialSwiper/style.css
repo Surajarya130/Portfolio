@@ -1,16 +1,21 @@
 .swiper {
   width: 100%;
+  margin: 0 auto;
   height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
-  /* Center slide text vertically */
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-slide .flex {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .swiper-slide img {
@@ -19,3 +24,7 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* .swiper-button-prev {
+  background-color: red;
+} */

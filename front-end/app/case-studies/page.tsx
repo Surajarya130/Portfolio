@@ -1,16 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-import pro1 from "@/public/assets/pro1.svg";
+import CaseStudiesCard from "@/components/CaseStudiesCard/CaseStudiesCard";
+import { caseStudiesData } from "@/public/constants";
 
 const CaseStudies = () => {
   return (
     <>
-      <div className="bg-white-900 py-24 dark:bg-black-200">
-        <div className="flex max-container sm:flex-col-reverse py-10">
+      <div className="bg-white-800 py-24 dark:bg-black-300">
+        <div className="flex max-container px-[2.5%] sm:flex-col-reverse py-10">
           <div className="text-center">
             <h1 className="text-center heading-1 text-black-200 dark:text-white-900 mb-8">
-              <span className="strip">Recent Case Studies</span>
+              Recent <span className="strip">Case Studies</span>
             </h1>
             <p className="para-regular text-white-500 dark:text-white-800 flex justify-center">
               <span className="">
@@ -22,7 +23,11 @@ const CaseStudies = () => {
         </div>
 
         <div className="max-container px-[2.5%]">
-          <div className="flex-col sm:flex sm:flex-row pb-10"></div>
+          <div className="flex-col sm:flex sm:flex-row pb-10 gap-9 justify-center">
+            {caseStudiesData.map((item) => {
+              return <CaseStudiesCard key={item.title} imageSrc={item.img.src} />;
+            })}
+          </div>
         </div>
       </div>
     </>
