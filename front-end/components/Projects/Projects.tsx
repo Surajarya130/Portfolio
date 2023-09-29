@@ -30,7 +30,7 @@ const Projects = () => {
                 </span>
               </div>
               <p className="body-bold text-white-900 my-8 sm:mt-12 flex items-center">
-                See Detail Project
+                See Detailed Project
                 <span className="ml-2">
                   <Image src={arrRight} alt="arrright" />
                 </span>

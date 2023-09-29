@@ -12,6 +12,8 @@ import Morent from "./Morrent.png";
 import JobIt from "./JobIt.png";
 import Hipnode from "./Hipnode.png";
 import arrRight from "./arrRight.svg";
+import earth from "./earth.svg";
+import arrRightBlue from "./arrRightBlue.svg";
 import arrRSm from "./arrRSm.svg";
 import CTA from "./CTA.png";
 import roundedCircle from "./roundedCircle.svg";
@@ -31,7 +33,16 @@ import night from "./night.svg";
 import checkGreen from "./checkGreen.svg";
 import js from "./js.svg";
 import morentCase from "./morent-case.png";
+import githubBlue from "./githubBlue.svg";
 import jobitCase from "./jobit-case.png";
+import devThumbImage from "./DevProfileThumbnail.svg";
+import carBW from "./carsBW.png";
+import projectCoverImg from "./projectCoverImg.png";
+import defIcon from "./defIcon.svg";
+import designIcon from "./designIcon.svg";
+import planIcon from "./planIcon.svg";
+import devIcon from "./devIcon.svg";
+import depIcon from "./deployIcon.svg";
 
 export {
   downloadIcon,
@@ -68,4 +79,15 @@ export {
   js,
   morentCase,
   jobitCase,
+  arrRightBlue,
+  earth,
+  githubBlue,
+  devThumbImage,
+  carBW,
+  projectCoverImg,
+  defIcon,
+  depIcon,
+  planIcon,
+  designIcon,
+  devIcon,
 };

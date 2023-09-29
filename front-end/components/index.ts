@@ -7,6 +7,8 @@ import GetInTouch from "./GetInTouch/GetInTouch";
 import WorkExperience from "./WorkExperience/WorkExperience";
 import TestimonialSwiper from "./TestimonialSwiper/TestimonialSwiper";
 import SocialConnection from "./SocialConnection/SocialConnection";
+import TechUsedInProject from "./TechUsedInProject/TechUsedInProject";
+import MyProcess from "./MyProcess/MyProcess";
 
 export {
   Navbar,
@@ -18,4 +20,6 @@ export {
   WorkExperience,
   TestimonialSwiper,
   SocialConnection,
+  TechUsedInProject,
+  MyProcess,
 };

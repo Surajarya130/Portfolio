@@ -193,6 +193,26 @@ const caseStudiesData = [
     desc: "Job Finding Applicaiton",
     img: jobitCase,
   },
+  {
+    title: "Bla Bla",
+    desc: "Test App Applicaiton",
+    img: morentCase,
+  },
+  {
+    title: "Hello World",
+    desc: "Ola la la la",
+    img: jobitCase,
+  },
+  {
+    title: "Morrent",
+    desc: "Car Rental Applicaiton",
+    img: morentCase,
+  },
+  {
+    title: "JobIt",
+    desc: "Job Finding Applicaiton",
+    img: jobitCase,
+  },
 ];
 
 export { cardData, workExpData, navLinks, projects, skillsIcons, caseStudiesData };
